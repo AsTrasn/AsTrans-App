@@ -1,0 +1,31 @@
+mat-toolbar div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+mat-toolbar{
+    background: #182983;
+}
+
+mat-toolbar div h1 a, mat-toolbar div a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+mat-icon{
+    color: #FFF;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.user-info p{
+    color: #FFF;
+    font-size: 15px;
+}

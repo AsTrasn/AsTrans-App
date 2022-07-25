@@ -1,0 +1,28 @@
+<mat-toolbar>
+    <ng-container>
+        <button mat-icon-button (click)="onToggleSidenav()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <div *ngIf="!isLogged; else viewLogout" class="d-flex">
+            <h1>
+                <a routerLink="/login">AsTrans PDF</a>
+            </h1>
+            <!-- <a routerLink="/login">Entrar</a> -->
+        </div>
+    </ng-container>
+</mat-toolbar>
+
+<ng-template #viewLogout>
+    <div>
+        <h1>
+            <a routerLink="/home">AsTrans PDF</a>
+        </h1>
+        <span class="user-info">
+            <p>{{getName()}} |</p>
+            <a mat-button (click)="onLogout()">
+                Salir
+                <mat-icon>exit_to_app</mat-icon>
+            </a>
+        </span>
+    </div>
+</ng-template>

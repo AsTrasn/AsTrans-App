@@ -1,0 +1,9 @@
+<div *ngIf="authSvc.isLogged | async; else authView">
+    <a *ngIf="authSvc.isLogged | async" mat-button routerLink="/home">Inicio</a>
+    <a *ngIf="authSvc.isLogged | async" mat-button [routerLink]="'/admin'">Admin</a>
+</div>
+
+
+<ng-template #authView>
+    <a mat-button routerLink="/login">Entrar</a>
+</ng-template>

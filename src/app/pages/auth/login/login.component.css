@@ -1,0 +1,35 @@
+mat-card-content{
+    width: 100%;
+    margin: 1rem;
+}
+
+mat-card{
+    height: 30%;
+    padding: 2rem;
+}
+
+
+.login-form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+mat-form-field{
+    width: 90%;
+}
+
+form button{
+    width: 90%;
+    margin-top: 1rem;
+    background: #182983;
+    padding: 0.3rem 0;
+}
+
+input{
+    padding: 0.5rem;
+    color: #313131;
+    font-size: 16px;
+}
